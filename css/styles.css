@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-body {
+.body {
   background-color: #ecd3b2;
   font-family: "Roboto", sans-serif;
 }
@@ -57,6 +57,30 @@ nav {
   transform: translateY(10px);
 }
 
+/* BOOSTRAP NAVEGADOR */
+.nav-item {
+  padding: 20px;
+  margin: 10px;
+  margin-right: 10px;
+  padding-right: 20px;
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+
+  font-weight: bold;
+  transition: 0.5s;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: solid black;
+  flex-wrap: wrap;
+}
+.nav-link li a {
+  text-decoration: none;
+  color: black;
+}
 .logo {
   width: 130px;
   height: 94px;
@@ -340,14 +364,12 @@ footer ul li a:hover {
   position: relative;
   margin: 0px;
 }
-
 .container img {
   width: 50%;
 } */
 
 /*
 .container p {
-
   position: absolute;
   font-size: 60px;
   color: white;
