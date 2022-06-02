@@ -1,6 +1,6 @@
+/* COLORES */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Square+Peg&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -34,7 +34,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: solid black;
+  border-top: solid #000;
   flex-wrap: wrap;
 }
 
@@ -43,11 +43,10 @@ nav {
   margin: 10px;
   margin-right: 10px;
   padding-right: 20px;
-  color: black;
+  color: #000;
   text-decoration: none;
   display: block;
   text-align: right;
-
   font-weight: bold;
   transition: 0.5s;
 }
@@ -63,24 +62,25 @@ nav {
   margin: 10px;
   margin-right: 10px;
   padding-right: 20px;
-  color: black;
+  color: #000;
   text-decoration: none;
   display: block;
   text-align: right;
-
   font-weight: bold;
   transition: 0.5s;
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: solid black;
+  border-top: solid #000;
   flex-wrap: wrap;
 }
+
 .nav-link li a {
   text-decoration: none;
-  color: black;
+  color: #000;
 }
+
 .logo {
   width: 130px;
   height: 94px;
@@ -137,6 +137,7 @@ main .principal h1 {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 10px;
 }
+
 .container-img {
   width: 100%;
 }
@@ -146,6 +147,7 @@ main .principal h1 {
   display: grid;
   place-items: center;
 }
+
 .container-img a img {
   width: 100%;
   height: 80%;
@@ -155,11 +157,10 @@ main .principal h1 {
 /* .container-img a img:first-child {
   filter: blur(2px);
 } */
-
 .picadas {
   position: absolute;
   font-size: 4em;
-  color: #fff;
+  color: white;
   text-shadow: 4px 3px 6px #000;
 }
 
@@ -176,18 +177,21 @@ main .principal h1 {
   font-size: 32px;
   font-weight: bold;
 }
+
 .pedido {
   text-align: center;
   padding-top: 35px;
   color: #fff;
   font-size: 40px;
-  text-shadow: 5px 5px 5px black;
+  text-shadow: 5px 5px 5px;
 }
+
 .form-pedido {
   background-image: url("../img/madera.jpg");
   object-fit: cover;
   background-position: center;
 }
+
 .form {
   width: 50%;
   margin: 0 auto;
@@ -201,6 +205,7 @@ main .principal h1 {
   margin-top: 10px;
   padding: 10px;
 }
+
 .medios-de-pago {
   text-align: center;
   display: flex;
@@ -226,6 +231,7 @@ main .principal h1 {
     flex-direction: column;
   }
 }
+
 footer {
   padding: 80px;
   display: flex;
@@ -234,6 +240,7 @@ footer {
   justify-content: center;
   background-color: rgba(228, 168, 89, 0.459);
 }
+
 footer ul {
   display: flex;
   list-style: none;
@@ -243,15 +250,18 @@ footer ul {
 footer ul li {
   padding: 0 1em;
 }
+
 footer ul li a {
   text-decoration: none;
-  color: black;
+  color: #000;
   transition: 0.4s;
 }
+
 footer ul li a:hover {
   color: #d35b05;
   font-size: 20px;
 }
+
 @media (max-width: 588px) {
   footer ul {
     display: grid;
@@ -260,15 +270,14 @@ footer ul li a:hover {
 }
 
 /* PAGINA CONTACTO*/
-
 .contacto-h1 {
   text-align: center;
-  color: black;
+  color: #000;
 }
+
 .form-contacto {
   margin: 0 auto;
   display: grid;
-
   width: 50%;
 }
 
@@ -277,29 +286,32 @@ footer ul li a:hover {
     width: 80%;
   }
 }
+
 .form-contacto input,
 .form-contacto textarea,
 .form-contacto button {
   margin-top: 20px;
   padding: 20px;
 }
-/* PAGINA NOSOTROS */
 
+/* PAGINA NOSOTROS */
 .presentacion-nostros p {
   text-align: center;
   font-size: 25px;
 }
+
 .pie {
   position: absolute;
   bottom: 0px;
   width: 100%;
 }
-/* PAGINA SUCURSALES  */
 
+/* PAGINA SUCURSALES  */
 .text-sucursales {
   text-align: center;
   font-size: 20px;
 }
+
 .text-sucursales h1,
 .text-sucursales h2,
 .text-sucursales h3,
@@ -307,25 +319,27 @@ footer ul li a:hover {
   margin-top: 5px;
   padding: 5px;
 }
-/* PAGINA PICADAS */
 
+/* PAGINA PICADAS */
 .image-picada {
   width: 100%;
   position: relative;
 }
+
 .image-picada img {
   width: 100%;
   height: 100%;
-
   object-fit: cover;
 }
+
 .image-picada h1 {
   position: absolute;
   top: 50%;
   left: 50%;
-  color: white;
+  color: #fff;
   transform: translate(-50%, -50%);
 }
+
 .texto-color:hover {
   color: #c4c4c4;
   cursor: default;
@@ -337,13 +351,15 @@ footer ul li a:hover {
   margin: 0 auto;
   max-width: 500px;
 }
+
 .image-oferta img {
   width: 100%;
 }
+
 .h1-ofertas {
   padding: 20px 40px;
   position: relative;
-  border: 3px solid black;
+  border: 3px solid #000;
   width: 80%;
   max-width: 700px;
   left: 50%;
@@ -351,12 +367,12 @@ footer ul li a:hover {
   margin-bottom: 80px;
   top: 40px;
 }
+
 .p-ofertas {
   padding: 20px;
   text-align: center;
   width: 80%;
   margin: 0 auto;
-
   font-size: 20px;
 }
 
@@ -367,27 +383,24 @@ footer ul li a:hover {
 .container img {
   width: 50%;
 } */
-
 /*
 .container p {
   position: absolute;
   font-size: 60px;
-  color: white;
+  color: $color-secundario;
   top: 30%;
   left: 15%;
   font-weight: bold;
 }*/
-
 /* .imagen {
   display: flex;
   justify-content: space-between;
 } */
-
 /* ANIMACION 
 .text-color :hover {
-  color: black;
+  color: $color-primario;
 }
 .container :hover {
   transform: scale(1.1);
   box-shadow: 15px;
-} */ ;
+} */
