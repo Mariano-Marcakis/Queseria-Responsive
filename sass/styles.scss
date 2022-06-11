@@ -6,20 +6,8 @@
   width: 100%;
   padding: 13px 0;
 }
-$headings: (
-    h1: 4em,
-    h2: 3em,
-    h3: 2em,
-    h4: 1em,
-    h5: 0.75,
-    h6: 0.35,
-  ) 
-  $h1: map-get ($headings, h1);
 
-  h1 { font-size: $h1;
-}
-  
-  * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -38,70 +26,69 @@ footer {
 nav {
   background-color: #d9b689;
   @include navegation();
-}
+  .div-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.div-contenedor {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .navegador {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: solid $color-primario;
+    flex-wrap: wrap;
+  }
 
-.navegador {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-top: solid $color-primario;
-  flex-wrap: wrap;
-}
+  .navegador li a {
+    padding: 20px;
+    margin: 10px;
+    margin-right: 10px;
+    padding-right: 20px;
+    color: $color-primario;
+    text-decoration: none;
+    display: block;
+    text-align: right;
 
-.navegador li a {
-  padding: 20px;
-  margin: 10px;
-  margin-right: 10px;
-  padding-right: 20px;
-  color: $color-primario;
-  text-decoration: none;
-  display: block;
-  text-align: right;
+    font-weight: bold;
+    transition: 0.5s;
+  }
 
-  font-weight: bold;
-  transition: 0.5s;
-}
+  .navegador li a:hover {
+    color: #d35b05;
+    transform: translateY(10px);
+  }
 
-.navegador li a:hover {
-  color: #d35b05;
-  transform: translateY(10px);
-}
+  /* BOOSTRAP NAVEGADOR */
+  .nav-item {
+    padding: 20px;
+    margin: 10px;
+    margin-right: 10px;
+    padding-right: 20px;
+    color: $color-primario;
+    text-decoration: none;
+    display: block;
+    text-align: right;
 
-/* BOOSTRAP NAVEGADOR */
-.nav-item {
-  padding: 20px;
-  margin: 10px;
-  margin-right: 10px;
-  padding-right: 20px;
-  color: $color-primario;
-  text-decoration: none;
-  display: block;
-  text-align: right;
-
-  font-weight: bold;
-  transition: 0.5s;
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-top: solid $color-primario;
-  flex-wrap: wrap;
-}
-.nav-link li a {
-  text-decoration: none;
-  color: $color-primario;
-}
-.logo {
-  width: 130px;
-  height: 94px;
-  object-fit: cover;
+    font-weight: bold;
+    transition: 0.5s;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: solid $color-primario;
+    flex-wrap: wrap;
+  }
+  .nav-link li a {
+    text-decoration: none;
+    color: $color-primario;
+  }
+  .logo {
+    width: 130px;
+    height: 94px;
+    object-fit: cover;
+  }
 }
 
 main {
@@ -117,16 +104,14 @@ main {
 main .principal h1 {
   font-size: 50px;
   text-align: center;
-  /* font-weight: bold; */
-}
-
-@media screen and (max-width: 500px) {
+  @media screen and (max-width: 500px) {
   main .principal h1 {
     font-size: 30px;
     padding: 0px 20px;
     padding-bottom: 10px;
   }
 }
+
 
 .imagen-principal img {
   width: 100%;
@@ -169,22 +154,19 @@ main .principal h1 {
   object-fit: cover;
 }
 
-/* .container-img a img:first-child {
-  filter: blur(2px);
-} */
-
 .picadas {
   position: absolute;
   font-size: 4em;
   color: $color-secundario;
   text-shadow: 4px 3px 6px #000;
-}
 
-@media screen and (max-width: 550px) {
+  @media screen and (max-width: 550px) {
   .picadas {
     font-size: 2.5rem;
   }
+
 }
+
 
 /* parrafo novedades*/
 .parrafo {
@@ -205,21 +187,15 @@ main .principal h1 {
   object-fit: cover;
   background-position: center;
 }
-/*.form { 
-  width: 50%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: auto;
-}*/
-  .form {
-   @extend .form
 
-  }
-.form input,
+.form {
+  @extend .form;
+  .form input,
 .form textarea,
 .form button {
   margin-top: 10px;
   padding: 10px;
+}
 }
 .medios-de-pago {
   text-align: center;
@@ -253,8 +229,7 @@ footer {
   gap: 20px;
   justify-content: center;
   background-color: rgba(228, 168, 89, 0.459);
-}
-footer ul {
+  footer ul {
   display: flex;
   list-style: none;
   justify-content: center;
@@ -278,6 +253,8 @@ footer ul li a:hover {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+}
+ /* MODIFICACIONES CON SASS HASTA ACA */ 
 
 /* PAGINA CONTACTO*/
 
@@ -290,9 +267,7 @@ footer ul li a:hover {
   display: grid;
 
   width: 50%;
-}
-
-@media screen and (max-width: 700px) {
+  @media screen and (max-width: 700px) {
   .form-contacto {
     width: 80%;
   }
@@ -303,11 +278,15 @@ footer ul li a:hover {
   margin-top: 20px;
   padding: 20px;
 }
+}
+
 /* PAGINA NOSOTROS */
 
 .presentacion-nostros p {
   text-align: center;
-  font-size: 25px;
+  font-size: 25px; 
+  
+
 }
 .pie {
   position: absolute;
@@ -379,35 +358,3 @@ footer ul li a:hover {
 
   font-size: 20px;
 }
-
-/* .container {
-  position: relative;
-  margin: 0px;
-}
-.container img {
-  width: 50%;
-} */
-
-/*
-.container p {
-  position: absolute;
-  font-size: 60px;
-  color: $color-secundario;
-  top: 30%;
-  left: 15%;
-  font-weight: bold;
-}*/
-
-/* .imagen {
-  display: flex;
-  justify-content: space-between;
-} */
-
-/* ANIMACION 
-.text-color :hover {
-  color: $color-primario;
-}
-.container :hover {
-  transform: scale(1.1);
-  box-shadow: 15px;
-} */ ;

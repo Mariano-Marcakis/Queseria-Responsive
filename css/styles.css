@@ -1,6 +1,12 @@
 /* COLORES */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Square+Peg&display=swap");
+.form {
+  width: 50%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto; }
+
 * {
   margin: 0;
   padding: 0;
@@ -130,9 +136,6 @@ main .principal h1 {
   height: 80%;
   object-fit: cover; }
 
-/* .container-img a img:first-child {
-  filter: blur(2px);
-} */
 .picadas {
   position: absolute;
   font-size: 4em;
@@ -161,12 +164,6 @@ main .principal h1 {
   background-image: url("../img/madera.jpg");
   object-fit: cover;
   background-position: center; }
-
-.form {
-  width: 50%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: auto; }
 
 .form input,
 .form textarea,
@@ -313,32 +310,3 @@ footer ul li a:hover {
   width: 80%;
   margin: 0 auto;
   font-size: 20px; }
-
-/* .container {
-  position: relative;
-  margin: 0px;
-}
-.container img {
-  width: 50%;
-} */
-/*
-.container p {
-  position: absolute;
-  font-size: 60px;
-  color: $color-secundario;
-  top: 30%;
-  left: 15%;
-  font-weight: bold;
-}*/
-/* .imagen {
-  display: flex;
-  justify-content: space-between;
-} */
-/* ANIMACION 
-.text-color :hover {
-  color: $color-primario;
-}
-.container :hover {
-  transform: scale(1.1);
-  box-shadow: 15px;
-} */
