@@ -6,7 +6,9 @@
   width: 100%;
   padding: 13px 0;
 }
-
+h1 {
+  text-align: center;
+}
 * {
   margin: 0;
   padding: 0;
@@ -60,7 +62,6 @@ nav {
     transform: translateY(10px);
   }
 
-  /* BOOSTRAP NAVEGADOR */
   .nav-item {
     padding: 20px;
     margin: 10px;
@@ -104,14 +105,14 @@ main {
 main .principal h1 {
   font-size: 50px;
   text-align: center;
-  @media screen and (max-width: 500px) {
+}
+@media screen and (max-width: 500px) {
   main .principal h1 {
     font-size: 30px;
     padding: 0px 20px;
     padding-bottom: 10px;
   }
 }
-
 
 .imagen-principal img {
   width: 100%;
@@ -159,14 +160,13 @@ main .principal h1 {
   font-size: 4em;
   color: $color-secundario;
   text-shadow: 4px 3px 6px #000;
+}
 
-  @media screen and (max-width: 550px) {
+@media screen and (max-width: 550px) {
   .picadas {
     font-size: 2.5rem;
   }
-
 }
-
 
 /* parrafo novedades*/
 .parrafo {
@@ -180,7 +180,6 @@ main .principal h1 {
   padding-top: 35px;
   color: $color-secundario;
   font-size: 40px;
-  text-shadow: 5px 5px 5px;
 }
 .form-pedido {
   background-image: url("../img/madera.jpg");
@@ -190,12 +189,12 @@ main .principal h1 {
 
 .form {
   @extend .form;
-  .form input,
+}
+.form input,
 .form textarea,
 .form button {
   margin-top: 10px;
   padding: 10px;
-}
 }
 .medios-de-pago {
   text-align: center;
@@ -229,7 +228,8 @@ footer {
   gap: 20px;
   justify-content: center;
   background-color: rgba(228, 168, 89, 0.459);
-  footer ul {
+}
+footer ul {
   display: flex;
   list-style: none;
   justify-content: center;
@@ -253,8 +253,8 @@ footer ul li a:hover {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-}
- /* MODIFICACIONES CON SASS HASTA ACA */ 
+
+/* MODIFICACIONES CON SASS HASTA ACA */
 
 /* PAGINA CONTACTO*/
 
@@ -267,7 +267,8 @@ footer ul li a:hover {
   display: grid;
 
   width: 50%;
-  @media screen and (max-width: 700px) {
+}
+@media screen and (max-width: 700px) {
   .form-contacto {
     width: 80%;
   }
@@ -278,15 +279,12 @@ footer ul li a:hover {
   margin-top: 20px;
   padding: 20px;
 }
-}
 
 /* PAGINA NOSOTROS */
 
 .presentacion-nostros p {
   text-align: center;
-  font-size: 25px; 
-  
-
+  font-size: 25px;
 }
 
 /* PAGINA SUCURSALES  */
@@ -325,6 +323,26 @@ footer ul li a:hover {
   color: #c4c4c4;
   cursor: default;
 }
+.grillas {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 22rem;
+}
+@media screen and (max-width: 900px) {
+  .grillas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.image-grilla {
+  text-align: center;
+  justify-content: center;
+}
+.image-grilla h3 {
+  margin-top: -70px;
+}
 
 /*PAGINA OFERTAS*/
 .image-oferta {
@@ -345,6 +363,7 @@ footer ul li a:hover {
   transform: translateX(-50%);
   margin-bottom: 80px;
   top: 40px;
+  text-align: center;
 }
 .p-ofertas {
   padding: 20px;
