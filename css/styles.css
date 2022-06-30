@@ -304,18 +304,16 @@ footer ul li a:hover {
 .h1-ofertas {
   padding: 20px 40px;
   position: relative;
-  border: 3px solid #000;
   width: 80%;
   max-width: 700px;
   left: 50%;
   transform: translateX(-50%);
   margin-bottom: 80px;
-  top: 40px;
-  text-align: center; }
+  top: 15px;
+  text-align: center;
+  border-bottom: 3px solid #000; }
 
 .p-ofertas {
-  padding: 20px;
   text-align: center;
-  width: 80%;
-  margin: 0 auto;
-  font-size: 20px; }
+  font-size: 25px;
+  padding-top: 10px; }
